@@ -1,0 +1,15 @@
+describe('Registation',()=>{
+    it('Registration 1', ()=>{
+        cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register')
+        cy.get("#input-firstname").type('Gulce')
+        cy.get("#input-lastname").type('Oruc')
+        cy.get("#input-email").type('Gulce32@email.com')
+        cy.get("#input-telephone").type('530 811 32 64')
+        cy.get("#input-password").type('Duru4206')
+        cy.get("#input-confirm").type('Duru4206')
+        cy.get('input[type="radio"]').eq(1).check()
+        cy.get('input[type="checkbox"]').check()
+        cy.get(".btn.btn-primary").click()
+        cy.get('h1').should("have.text", "Your Account Has Been Created!")
+    })
+})
