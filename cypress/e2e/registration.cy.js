@@ -3,7 +3,7 @@ describe('Registation',()=>{
         cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register')
         cy.get("#input-firstname").type('Gulce')
         cy.get("#input-lastname").type('Oruc')
-        cy.get("#input-email").type('Gulce32@email.com')
+        cy.get("#input-email").type(Math.random().toString(15).substring(2,10)+"@email.com")
         cy.get("#input-telephone").type('530 811 32 64')
         cy.get("#input-password").type('Duru4206')
         cy.get("#input-confirm").type('Duru4206')

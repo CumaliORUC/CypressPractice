@@ -7,5 +7,7 @@ module.exports = defineConfig({
     },
   },
   viewportHeight:1000,
-  viewportHeight:890
+  viewportHeight:890,
+  // includeShadowDom:true
+
 });
