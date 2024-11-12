@@ -1,4 +1,7 @@
 {
-  "name": "Gulce",
-  "last name": "Oruc"
+  "name": 
+        {"first_name":"Duru",
+          "last_name": "Oruc"},
+  "phoneNumbner":"1212121",
+  "password":"Gulcem"
 }
